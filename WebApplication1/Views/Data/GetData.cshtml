@@ -1,0 +1,31 @@
+﻿@model IEnumerable<WebApplication1.Models.User>
+
+<h1>Users Data</h1>
+
+<div>
+	<button>
+	<a asp-area = "" asp-controller="About" asp-action="Profile">click me</a>
+	</button>
+</div>
+
+<table>
+	<thead>
+		<tr>
+			<th>UserId</th>
+			<th>Id</th>
+			<th>Title</th>
+			<th>Body</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach(var item in Model)
+		{
+			<tr>
+				<td>@item.UserId</td>
+				<td>@item.Id</td>
+				<td>@item.Title</td>
+				<td>@item.Body</td>
+			</tr>
+		}
+	</tbody>
+</table>
