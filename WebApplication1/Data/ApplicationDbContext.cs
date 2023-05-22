@@ -10,7 +10,7 @@ namespace WebApplication1.Data
 		{
 			_config = config;
 		}
-		public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<User> Users { get; set; }
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
 			if (!optionsBuilder.IsConfigured)
@@ -34,3 +34,6 @@ namespace WebApplication1.Data
         }
 	}
 }
+
+
+
